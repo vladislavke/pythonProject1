@@ -49,17 +49,38 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-# TODO здесь ваш код
+table_code = goods['Стол']
+table_item1 = store[table_code][0]
+table_item2 = store[table_code][1]
+table_quantity1 = table_item1['quantity']
+table_quantity2 = table_item2['quantity']
+table_price1 = table_item1['price']
+table_price2 = table_item2['price']
+table_cost = table_quantity1 * table_price1 + table_quantity2 * table_price2
+print('Стол -', table_quantity1 + table_quantity2, 'шт, стоимость', table_cost, 'руб')
 
-##########################################################################################
-# ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
-# нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
-# и оформить попытку сдачи ДЗ! Без этого ДЗ не будет проверяться!                        #
-# Как оформить попытку сдачи смотрите видео - https://youtu.be/qVpN0L-C3LU               #
-##########################################################################################
 
+sofa_code = goods['Диван']
+sofa_item1 = store[sofa_code][0]
+sofa_item2 = store[sofa_code][1]
+sofa_quantity1 = sofa_item1['quantity']
+sofa_quantity2 = sofa_item2['quantity']
+sofa_price1 = sofa_item1['price']
+sofa_price2 = sofa_item2['price']
+sofa_cost = sofa_quantity1 * sofa_price1 + sofa_quantity2 * sofa_price2
+print('Диван -', sofa_quantity1 + sofa_quantity2, 'шт, стоимость', sofa_cost, 'руб')
 
-
-
+chair_code = goods['Стул']
+chair_item0 = store[chair_code][0]
+chair_item1 = store[chair_code][1]
+chair_item2 = store[chair_code][2]
+chair_quantity0 = chair_item1['quantity']
+chair_quantity1 = chair_item2['quantity']
+chair_quantity2 = chair_item2['quantity']
+chair_price0 = chair_item0['price']
+chair_price1 = chair_item1['price']
+chair_price2 = chair_item2['price']
+chair_cost = chair_quantity0 * chair_price0 + chair_quantity1 * chair_price1 + chair_quantity2 * chair_price2
+print('Стул -', chair_quantity0 + chair_quantity1 + chair_quantity2, 'шт, стоимость', chair_cost, 'руб')
 
 
