@@ -10,7 +10,7 @@
 # Использовать только операторы if/elif/else, можно вложенные
 
 envelop_x, envelop_y = 10, 7
-paper_x, paper_y = 8, 9
+# paper_x, paper_y = 8, 9
 # проверить для
 # paper_x, paper_y = 9, 8
 # paper_x, paper_y = 6, 8
@@ -20,7 +20,10 @@ paper_x, paper_y = 8, 9
 # paper_x, paper_y = 9, 11
 # (просто раскоментировать нужную строку и проверить свой код)
 
-# TODO здесь ваш код
+if (envelop_x > paper_x and envelop_y > paper_y) or (envelop_x > paper_y and envelop_y > paper_x):
+    print("войдет")
+else:#
+    print("Не войдет")
 
 # Усложненное задание, решать по желанию.
 # Заданы размеры hole_x, hole_y прямоугольного отверстия и размеры brick_х, brick_у, brick_z кирпича (все размеры
