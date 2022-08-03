@@ -11,4 +11,9 @@ user_input = input("Введите, пожалуйста, номер месяц�
 month = int(user_input)
 print('Вы ввели', month)
 
-# TODO здесь ваш код
+days_in_mons = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+
+if 0 < month < 13:
+    print(days_in_mons[month])
+else:
+    print('Number is incorrect')
