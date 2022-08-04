@@ -48,7 +48,8 @@ store = {
 
 # TODO здесь ваш код
 
-
+for num in goods:
+    print(goods.get(num))
 
 
 
