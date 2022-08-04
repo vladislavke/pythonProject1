@@ -10,5 +10,12 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
-
-# TODO здесь ваш код
+count = 0
+test = 0
+debits = 2000
+while count < 9:
+    count += 1
+    expenses *= 1.03
+    test += educational_grant
+    debits += expenses - educational_grant
+print('Студенту надо попросить ', round(debits, 2), 'рублей')
