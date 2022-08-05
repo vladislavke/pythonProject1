@@ -48,9 +48,16 @@ store = {
 
 # TODO здесь ваш код
 
-for num in goods:
-    print(goods.get(num))
-
-
+for name in goods:
+    price = 0
+    quantity = 0
+    good = store.get(goods[name])
+    supplies = int(len(good))
+    while supplies > 0:
+        supplies -= 1
+        supplie = good[supplies]
+        quantity += supplie['quantity']
+        price += supplie['price'] * supplie['quantity']
+    print('Тип товара -', name, ' Количество товара -', quantity, 'Стоимость товара -', price)
 
 
