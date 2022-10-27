@@ -27,7 +27,109 @@ import simple_draw as sd
 # sd.line()
 # Результат решения см lesson_004/results/exercise_01_shapes.jpg
 
-# TODO здесь ваш код
+def triangle(point, angle, length):
+    side1 = sd.get_vector(start_point=point, angle=angle, length=length, width=2)
+    side1.draw()
+
+    side2 = sd.get_vector(start_point=side1.end_point, angle=angle + 120, length=length, width=2)
+    side2.draw()
+
+    side3 = sd.get_vector(start_point=side2.end_point, angle=angle + 240, length=length, width=2)
+    side3.draw()
+
+
+def square(point, angle, length):
+    side1 = sd.get_vector(start_point=point, angle=angle, length=length, width=2)
+    side1.draw()
+
+    side2 = sd.get_vector(start_point=side1.end_point, angle=angle + 90, length=length, width=2)
+    side2.draw()
+
+    side3 = sd.get_vector(start_point=side2.end_point, angle=angle + 180, length=length, width=2)
+    side3.draw()
+
+    side4 = sd.get_vector(start_point=side3.end_point, angle=angle + 270, length=length, width=2)
+    side4.draw()
+
+def pentagonal(point, angle, length):
+    side1 = sd.get_vector(start_point=point, angle=angle, length=length, width=2)
+    side1.draw()
+    angle += 72
+
+    side2 = sd.get_vector(start_point=side1.end_point, angle=angle, length=length, width=2)
+    side2.draw()
+    angle += 72
+
+    side3 = sd.get_vector(start_point=side2.end_point, angle=angle, length=length, width=2)
+    side3.draw()
+    angle += 72
+
+    side4 = sd.get_vector(start_point=side3.end_point, angle=angle, length=length, width=2)
+    side4.draw()
+    angle += 72
+
+    side5 = sd.get_vector(start_point=side4.end_point, angle=angle, length=length, width=2)
+    side5.draw()
+
+def geksagonal(point, angle, length):
+    side1 = sd.get_vector(start_point=point, angle=angle, length=length, width=2)
+    side1.draw()
+    angle += 60
+
+    side2 = sd.get_vector(start_point=side1.end_point, angle=angle, length=length, width=2)
+    side2.draw()
+    angle += 60
+
+    side3 = sd.get_vector(start_point=side2.end_point, angle=angle, length=length, width=2)
+    side3.draw()
+    angle += 60
+
+    side4 = sd.get_vector(start_point=side3.end_point, angle=angle, length=length, width=2)
+    side4.draw()
+    angle += 60
+
+    side5 = sd.get_vector(start_point=side4.end_point, angle=angle, length=length, width=2)
+    side5.draw()
+    angle += 60
+
+    side6 = sd.get_vector(start_point=side5.end_point, angle=angle, length=length, width=2)
+    side6.draw()
+
+def polygon(point, sides, length):
+    angle = 360 / sides
+    if sides < 2:
+        break
+    else:
+        angle += 360/sides
+    sides -= 1
+    if sides >= 1
+    side1 = sd.get_vector(start_point=point, angle=360/, length=length, width=2)
+    side1.draw()
+    angle += 60
+
+    side2 = sd.get_vector(start_point=side1.end_point, angle=angle, length=length, width=2)
+    side2.draw()
+    angle += 60
+
+    side3 = sd.get_vector(start_point=side2.end_point, angle=angle, length=length, width=2)
+    side3.draw()
+    angle += 60
+
+    side4 = sd.get_vector(start_point=side3.end_point, angle=angle, length=length, width=2)
+    side4.draw()
+    angle += 60
+
+    side5 = sd.get_vector(start_point=side4.end_point, angle=angle, length=length, width=2)
+    side5.draw()
+    angle += 60
+
+    side6 = sd.get_vector(start_point=side5.end_point, angle=angle, length=length, width=2)
+    side6.draw()
+point = sd.get_point(200, 100)
+# triangle(point=point, angle=30, length=200)
+# square(point=point, angle=30, length=200)
+# pentagonal(point=point, angle=30, length=200)
+geksagonal(point=point, angle=0, length=200)
 
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
