@@ -35,6 +35,7 @@ def draw_branches(point, angle, length, color):
     s_point = point
     branch = sd.get_vector(start_point=s_point, angle=90 + angle, length=length, width=2)
     sd.vector(start=s_point, angle=90 + angle, length=length, width=2, color=rainbow_colors[color])
+    s_point = sd.
 
     branch2 = sd.get_vector(start_point=s_point, angle=90-angle, length=length, width=2)
     sd.vector(start=s_point, angle=90-angle, length=length, width=2, color=rainbow_colors[color])
