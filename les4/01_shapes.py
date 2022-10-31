@@ -102,7 +102,7 @@ def polygon(point, sides, length):
     s_point = point
     while count > 0:
         angle = (360 / sides)*count
-        side = sd.get_vector(start_point=s_point, angle=angle, length=length, width=2,colo)
+        side = sd.get_vector(start_point=s_point, angle=angle, length=length, width=2)
         side.draw()
         count -= 1
         s_point = side.end_point
